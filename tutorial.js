@@ -17,7 +17,7 @@ if (message.content.startsWith("!ping")) {
 message.channel.send("Pong! Latenz: "+client.ping+" ms")
 	}
 	if (message.content.startsWith("!help")) {
-		const embed = new Discord.RichEmbed()
+		const embed = new Discord.MessageEmbed() //DJS v12 Update
 		         .setTitle("Hilfe")
 		         .setDescription("Die Hilfe-Seite des "+client.user.username+"'s")
 		         .setColor('#ff0000')
